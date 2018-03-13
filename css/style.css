@@ -10,13 +10,13 @@ body {
 }
 
 .container {
-  margin: 30px auto;
-  width: 575px;
+  margin: 1% auto;
+  width: 100%;
 }
 
 h1 {
   text-align: center;
-  padding-top: 20px;
+  padding-top: 40px;
   padding-bottom: 40px;
   font-size: 150%;
   text-transform: uppercase;
@@ -32,23 +32,47 @@ h2 {
 
 .photo {
   max-width: 100%;
-  padding-bottom: 20px;
+  margin: 1% auto;
+  object-fit: cover;
+  /*padding: 20px;*/
 }
+
 
 /*code for two-column design*/
 @media screen and (min-width: 575px){
    div {
-    margin: 0 auto;
-    padding-left: 30px;
+    /*margin-bottom: 1%;
+    margin-left: 2%;*/
     float: left;
     width: 48%;
+    margin: 1%
+}
+
+@media screen and (min-width: 575px){
+  .photo {
+    height: 200px;
   }
 
+@media screen and (min-width: 575px){
+ .container {
+   width: 85%;
+ }
 /*code for four design*/
 @media screen and (min-width: 991px){
    div {
-    margin: 0 auto;
-    padding-left: 30px;
+    margin: 1% auto;
+    padding: 8px;
     float: left;
     width: 24%;
+    height: 200px;
   }
+
+  @media screen and (min-width: 991px){
+    .photo {
+      height: 200px;
+    }
+
+  @media screen and (min-width: 991px){
+   .container {
+     width: 80%;
+   }
